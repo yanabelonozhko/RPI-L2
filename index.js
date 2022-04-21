@@ -19,6 +19,8 @@ const modal = $.modal({
     `
 });
 
+
+
 document.getElementById("myBtn").onclick = function () {
     modal.open();
     success.style.display = "none";
@@ -89,6 +91,7 @@ document.getElementById("signUp").onclick = function () {
     let liFirst = document.createElement('li');
     liFirst.classList.add("nav-menu-item-welcome");
     liFirst.innerHTML = document.getElementById("nameInput").value;
+    localStorage.setItem('sign-up', document.getElementById("nameInput").value);
     document.getElementById("list").prepend(liFirst);
 }
 
