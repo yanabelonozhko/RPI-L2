@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="signupstyle.css">
   <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.min.css">
 
   <title>GiftShop</title>
@@ -54,14 +57,14 @@
     </nav>
 
     <nav class="nav-menu">
-      <ul class="nav-menu-list">
-        <a class="nav-menu-link" href="" title="register">
+      <ul id="list" class="nav-menu-list">
+        <a id="register-btn" class="nav-menu-link" href="" title="register">
           <li class="nav-menu-item nav-menu-item-blue">
             Register
           </li>
         </a>
         <a class="nav-menu-link" href="" title="sign in">
-          <li class="nav-menu-item nav-menu-item-red">
+          <li id="sign-in-btn" class="nav-menu-item nav-menu-item-red">
             Sign In
           </li>
         </a>
@@ -146,14 +149,14 @@
       </div>
 
       <div class="image-women">
-          <span class="img-women-text">
-            <span class="img-women-heading">
-              women's wear
-            </span>
-            <span class="img-women-description">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-            </span>
+        <span class="img-women-text">
+          <span class="img-women-heading">
+            women's wear
           </span>
+          <span class="img-women-description">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+          </span>
+        </span>
       </div>
 
       <div class="image-baby">
@@ -399,7 +402,7 @@
           </a>
         </div>
         <div class="link-register">
-          <button class="register" href="" title="register now">Register Now</button>
+          <button class="register" id="myBtn" href="" title="register now">Register Now</button>
         </div>
       </div>
 
@@ -479,6 +482,9 @@
         </div>
       </footer>
     </section>
+    <script src="/base.js"></script>
+    <script src="/main.js"></script>
+    <script src="/index.js"></script>
   </main>
 </body>
 

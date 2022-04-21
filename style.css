@@ -127,6 +127,15 @@ img {
   box-shadow: inset 0px -4px 9px 0px rgba(160, 160, 160, .3);
 }
 
+.nav-menu-item-welcome {
+  color: #f0626e;
+  padding: 35px 24px;
+  margin-left: 5px;
+  font-size: 16px;
+  font-family: 'Lato';
+  letter-spacing: 1pt;
+}
+
 .nav-menu-item:hover {
   background: #fff;
 }
