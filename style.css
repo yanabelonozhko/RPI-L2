@@ -630,8 +630,21 @@ img {
 }
   
   
-/*кнопки меню*/
-.menu-button2 {
+/*кнопки меню 21*/
+.menu-button21 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 80px;
+  background-color: #3c3c3c;
+}
+.menu-button21:hover {
+  background-color: #f0626e;
+  cursor: pointer;
+}
+/*кнопки меню 22*/
+.menu-button22 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -640,27 +653,70 @@ img {
   background-color: #3c3c3c;
 }
 
-.menu-button2:hover {
+.menu-button22:hover {
   background-color: #f0626e;
   cursor: pointer;
 }
 
-/*фотографии второй секции (только они)*/
-.futured-products-photo-photo{
+
+.futured-products-base {
   margin-top: 30px;
+  overflow: hidden;
+  height: px;
+  height: 400px
+  width: 1170px;
+}
+.futured-products-base-slider {
+  background-color: red;
+  height: 400px;
+  width: 1770px;
+  transition: .2s;
   display: flex;
   justify-content: space-between;
+}
+.futured-products-base-slider-element {
+  background-color: ;
+  height: 400px;
   height: 290px;
-  width: 1170px
+}
+
+
+/*фотографии второй секции (только они)*/
+.futured-products-photo-photo{
+  overflow: hidden;
+  margin-top: 30px;
+  height: 290px;
+  width: 1170px;
   }
+ .futured-products-photo-photo-slider{
+   transition: .2s;
+   display: flex;
+   justify-content: space-between;
+   height: 290px;
+   width: 1770px 
+  } 
   
 /*фото*/
 .d1{
   background-image:url(img/d1.png);
   height: 290px;
-  width: 270px;
+  min-width: 270px;
 }
-
+.d1:nth-child(2){
+  background-image:url(img/d2.png);
+}
+.d1:nth-child(3){
+  background-image:url(img/d3.png);
+}
+.d1:nth-child(4){
+  background-image:url(img/d4.png);
+}
+.d1:nth-child(5){
+  background-image:url(img/d5.png);
+}
+.d1:nth-child(6){
+  background-image:url(img/d6.png);
+}
 .d1-20off{
   margin-top: 12px;
   width: 80px;
@@ -673,17 +729,6 @@ img {
   align-items: center;
 }
       
-.d2{
-  background-image:url(img/d2.png);
-  height: 290px;
-  width: 270px;
-}
-      
-.d3{        
-  background-image:url(img/d3.png);
-  height: 290px;
-  width: 270px;
-}
 .d3-new{
   margin-top: 12px;
   width: 80px;
@@ -696,18 +741,19 @@ img {
   align-items: center;
 }
    
-.d4{
-  background-image:url(img/d4.png);
-  height: 290px;
-  width: 270px;
-}
-
 
 /*описание фотографий(база под них)*/
 .futured-products-photo-desc{
+  overflow: hidden;
+  background-color: blue;
+  height: 55px;
+}
+.futured-products-photo-desc-slider{
+  transition: .2s;
   display: flex;
   justify-content: space-between;
   height: 55px;
+  width: 1770px
 }
       
 /*само описание(текст)*/
@@ -743,10 +789,11 @@ img {
   
 /*кнопочки(кнопка под одной фотографией)*/
 .futured-products-photo-buttons{
-  display: flex;
+  /*display: flex;
+  justify-content: space-between; */
   height: 52px;
   margin-top: 3px;
-  justify-content: space-between;
+  background-color: pink;
 }
 
 /*кнопочки одной кнопки*/

@@ -35,3 +35,5 @@ $.modal = function (options) {
         destroy() { }
     }
 }
+
+
