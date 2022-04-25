@@ -2,37 +2,34 @@
     const SlidesToShow = 6;
     const SlidesToScroll = 1;
     const container = document.querySelector('.futured-products-photo-photo');
-    const track = document.querySelector('.futured-products-photo-photo-slider');
-    const item = document.querySelector('.d1');
-
-    // ура, оно работает 
+    const track1 = document.querySelector('.futured-products-photo-photo-slider');
+    const track2 = document.querySelector('.futured-products-photo-desc-slider');
+    const track3 = document.querySelector('.futured-products-photo-buttons-slider');
+    const item = document.querySelector('.d1'); 
     const btnPrev = document.querySelector('.menu-button21');
     const btnNext = document.querySelector('.menu-button22');
 
-    // ширина элемента стандартно = 270 px. приделении получаем 
-    const itemW = (track.clientWidth / SlidesToShow) ;
+    // ширина элемента стандартно = 270 px. при делении получаем 
+    const itemW = (track1.clientWidth / SlidesToShow) ;
     const itemsCount = 6;
     const movePosition = 300; 
-
-
+    
     btnPrev.addEventListener('click',() => {
         position += movePosition;
-        console.log('prevvvvv');
         SetPosition();
         checkButtons();
     });
 
     btnNext.addEventListener('click',() => {
-        console.log('nexttt');
         position -= movePosition;
         SetPosition();
         checkButtons();
     });
 
-
-
 const SetPosition = () => {
-    track.style.transform = `translateX(${position}px)`;
+    track1.style.transform = `translateX(${position}px)`;
+    track2.style.transform = `translateX(${position}px)`;
+    track3.style.transform = `translateX(${position}px)`;
 };
 
 const checkButtons = () => {

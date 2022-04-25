@@ -632,25 +632,35 @@ img {
   
 /*кнопки меню 21*/
 .menu-button21 {
+  color: white;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 70px;
   height: 80px;
   background-color: #3c3c3c;
+  border: none;
+  outline: none;
 }
 .menu-button21:hover {
   background-color: #f0626e;
   cursor: pointer;
 }
+
+
 /*кнопки меню 22*/
 .menu-button22 {
+  color: white;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 70px;
   height: 80px;
   background-color: #3c3c3c;
+  border: none;
+  outline: none;
 }
 
 .menu-button22:hover {
@@ -745,15 +755,15 @@ img {
 /*описание фотографий(база под них)*/
 .futured-products-photo-desc{
   overflow: hidden;
-  background-color: blue;
   height: 55px;
+  width: 1171px;
 }
 .futured-products-photo-desc-slider{
   transition: .2s;
   display: flex;
   justify-content: space-between;
   height: 55px;
-  width: 1770px
+  width: 1770px;
 }
       
 /*само описание(текст)*/
@@ -789,15 +799,23 @@ img {
   
 /*кнопочки(кнопка под одной фотографией)*/
 .futured-products-photo-buttons{
-  /*display: flex;
-  justify-content: space-between; */
+  overflow: hidden;
+  width: 1170px;
   height: 52px;
   margin-top: 3px;
-  background-color: pink;
+}
+.futured-products-photo-buttons-slider{
+  display: flex;
+  transition: .2s;
+  justify-content: space-between; 
+  height: 52px;
+  width: 1770px;
+  
 }
 
 /*кнопочки одной кнопки*/
 .future-img-list{
+
   height: 51px; 
   width: 271px;
   display: flex;
