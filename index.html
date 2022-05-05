@@ -14,17 +14,6 @@
   </head>
 
   <body class="content">
-    <script>
-      if (localStorage.getItem("sign-up") !== "null") {
-        document.getElementById("myBtn").style.display = "none";
-        document.getElementById("register-btn").style.display = "none";
-        document.getElementById("sign-in-btn").style.display = "none";
-        let liFirst = document.createElement("li");
-        liFirst.classList.add("nav-menu-item-welcome");
-        liFirst.innerHTML = localStorage.getItem("sign-up");
-        document.getElementById("list").prepend(liFirst);
-      }
-    </script>
     <header class="header">
       <a href="#" class="logo" title="giftshop">
         <img src="img/logo.png" alt="logo" />
@@ -58,11 +47,11 @@
 
       <nav class="nav-menu">
         <ul id="list" class="nav-menu-list">
-          <a id="register-btn" class="nav-menu-link" href="" title="register">
+          <a id="register-btn" class="nav-menu-link hide " href="" title="register">
             <li class="nav-menu-item nav-menu-item-blue">Register</li>
           </a>
-          <a class="nav-menu-link" href="" title="sign in">
-            <li id="sign-in-btn" class="nav-menu-item nav-menu-item-red">
+          <a id="sign-in-btn" class="nav-menu-link hide" href="" title="sign in">
+            <li class="nav-menu-item nav-menu-item-red">
               Sign In
             </li>
           </a>

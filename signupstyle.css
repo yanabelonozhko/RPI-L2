@@ -130,9 +130,12 @@
 }
 
 .success{
-    display: none;
     font-size: 38px;
     color: #05aecc;
     padding-top: 30px;
     text-align: center;
+}
+
+.hide {
+    display: none;
 }
