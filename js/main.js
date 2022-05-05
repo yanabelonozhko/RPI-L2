@@ -88,12 +88,12 @@
   const checkInput = document.createElement('input');
   checkInput.type = 'checkbox';
   checkInput.id = 'agree';
-  checkInput.setAttribute('name', 'privacy');
   form.append(checkInput);
   const lblPrivacy = document.createElement('label');
-  lblPrivacy.setAttribute('for', 'privacy');
+  lblPrivacy.setAttribute('for', 'agree');
   lblPrivacy.textContent = 'I agree with ';
   const ref = document.createElement('a');
+  ref.href = 'https://www.youtube.com/watch?v=IQRDYfxL5fs&ab_channel=bigman';
   ref.textContent = 'Privacy Policy';
   ref.classList.add('privacy');
   lblPrivacy.append(ref);
