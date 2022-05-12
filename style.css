@@ -1227,6 +1227,7 @@ img {
 /*фото*/
 .p {
   margin: 0px 20px;
+  height: 200px;
 }
 
 .p:nth-child(1) {
@@ -1240,6 +1241,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 200px;
   background-image: url(img/p2.png);
   width: 370px;
 }
@@ -1249,11 +1251,11 @@ img {
 }
 .p:nth-child(4) {
   width: 370px;
-  background-image: url(img/p3.png);
+  background-image: url(img/p1.png);
 }
 .p:nth-child(5) {
   width: 370px;
-  background-image: url(img/p3.png);
+  background-image: url(img/p2.png);
 }
 .p:nth-child(6) {
   width: 370px;
