@@ -1226,14 +1226,15 @@ img {
 
 /*фото*/
 .p {
-  margin: 0px 20px;
+  margin: 0px 20px 0 0;
   height: 200px;
 }
 
 .p:nth-child(1) {
   background-image: url(img/p1.png);
   height: 200px;
-  width: 370px;
+  background-repeat: no-repeat;
+  width: 390px;
 }
 
 .p:nth-child(2) {
@@ -1242,11 +1243,15 @@ img {
   align-items: center;
   justify-content: center;
   height: 200px;
-  background-image: url(img/p2.png);
-  width: 370px;
+  background-image: url(img/p2.png) ;
+  background-repeat: no-repeat;
+  width: 390px;
+  margin-left: -20px;
 }
 .p:nth-child(3) {
-  width: 370px;
+  width: 390px;
+  margin-left: -20px;
+  background-repeat: no-repeat;
   background-image: url(img/p3.png);
 }
 .p:nth-child(4) {
