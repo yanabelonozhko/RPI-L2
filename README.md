@@ -1,2 +1,4 @@
 # RPI-L2
-https://yanabelonozhko.github.io/RPI-L2/
+
+РПИ, Лаба 2 ссылочка прилагается: https://yanabelonozhko.github.io/RPI-L2/
+Выполнили: Белоножка Яна, Анна Чиж, Бобр Виктория
